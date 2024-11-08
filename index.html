@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Task</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title-container">
+      <h2>Bundle & Save</h2>
+    </div>
+
+    <div class="bundle-option" onclick="toggleBundle(this)" data-price="195.00">
+        <div class="bundle-header">
+            <input type="radio" name="bundle" class="radio-input" onclick="toggleBundle(this.parentNode.parentNode)" />
+            <div>
+                <span class="pair-label">1 Pair</span>
+                <div class="price">DKK 195.00</div>
+            </div>
+            <div class="discount-container">
+                <span class="discount">50% OFF</span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="dropdown-labels">
+                <label>Size</label>
+                <label>Color</label>
+            </div>
+            <div class="dropdown-row">
+                <span>#1</span>
+                <select onclick="event.stopPropagation();">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <select onclick="event.stopPropagation();">
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+            </div>
+            <div class="dropdown-row">
+              <span>#2</span>
+              <select onclick="event.stopPropagation();">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+              </select>
+              <select onclick="event.stopPropagation();">
+                  <option>Red</option>
+                  <option>Blue</option>
+                  <option>Black</option>
+              </select>
+          </div>
+        </div>
+    </div>
+
+    <div class="bundle-option" onclick="toggleBundle(this)" data-price="345.00">
+        <div class="bundle-header">
+            <input type="radio" name="bundle" class="radio-input" onclick="toggleBundle(this.parentNode.parentNode)" />
+            <div>
+                <span class="pair-label">2 Pair</span>
+                <div class="price">DKK 345.00</div>
+            </div>
+            <div class="discount-container">
+                <span class="popular">Most Popular</span>
+                <span class="discount">40% OFF</span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="dropdown-labels">
+                <label>Size</label>
+                <label>Color</label>
+            </div>
+            <div class="dropdown-row">
+                <span>#1</span>
+                <select onclick="event.stopPropagation();">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <select onclick="event.stopPropagation();">
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+            </div>
+            <div class="dropdown-row">
+              <span>#2</span>
+              <select onclick="event.stopPropagation();">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+              </select>
+              <select onclick="event.stopPropagation();">
+                  <option>Red</option>
+                  <option>Blue</option>
+                  <option>Black</option>
+              </select>
+          </div>
+        </div>
+    </div>
+
+    <div class="bundle-option" onclick="toggleBundle(this)" data-price="528.00">
+        <div class="bundle-header">
+            <input type="radio" name="bundle" class="radio-input" onclick="toggleBundle(this.parentNode.parentNode)" />
+            <div>
+                <span class="pair-label">3 Pair</span>
+                <div class="price">DKK 528.00</div>
+            </div>
+            <div class="discount-container">
+                <span class="discount">60% OFF</span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="dropdown-labels">
+                <label>Size</label>
+                <label>Color</label>
+            </div>
+            <div class="dropdown-row">
+                <span>#1</span>
+                <select onclick="event.stopPropagation();">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <select onclick="event.stopPropagation();">
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Black</option>
+                </select>
+            </div>
+            <div class="dropdown-row">
+              <span>#2</span>
+              <select onclick="event.stopPropagation();">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+              </select>
+              <select onclick="event.stopPropagation();">
+                  <option>Red</option>
+                  <option>Blue</option>
+                  <option>Black</option>
+              </select>
+          </div>
+        </div>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="summary">
+        <div class="shipping-info">Free 2 Days Shipping</div>
+        <div class="total-price" id="totalPrice">Total: DKK 0.00</div>
+    </div>
+
+    <button class="btn-add" onclick="addToCart()">+ Add to Cart</button>
+  </div>
+
+ <script src="assets/js/script.js"></script>
+
+</body>
+</html>

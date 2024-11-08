@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .container {
+    max-width: 400px;
+    width: 100%;
+  }
+  .title-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .title-container::before,
+  .title-container::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #8f8a8a;
+    margin: 0 10px;
+  }
+
+  .title-container h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00722f;
+    margin: 0;
+  }
+  .bundle-option {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .bundle-option.selected {
+    background-color: #e6f2ed;
+    border: 2px solid #008000;
+  }
+  .bundle-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .radio-input {
+    margin-top: 5px;
+  }
+  .pair-label {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+  }
+  .price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #008000;
+    margin-top: 5px;
+  }
+  .discount-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  .discount, .popular {
+    font-weight: bold;
+    color: black;
+  }
+  .popular {
+    color: green;
+  }
+  .details {
+    display: none;
+    padding-top: 10px;
+  }
+  .bundle-option.selected .details {
+    display: block;
+  }
+  .dropdown-labels {
+    display: flex; /* Use flexbox to align items horizontally */
+    gap: 45px; /* This will set a 30px gap between the labels */
+    font-weight: bold;
+    color: #333;
+    margin-left: 55px;
+    margin-top: 10px;
+  }
+
+  .dropdown-row {
+    display: flex;
+    width: 150px;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+   
+  .dropdown-row span {
+     
+    color: #333;
+    margin-right: 10px; /* Space between the label and the dropdowns */
+  }
+  .dropdown-row select {
+    padding: 5px;
+    font-size: 0.9em;
+    width: 150px;
+  }
+  .dropdown-row + .dropdown-row {
+    margin-top: 30px; /* Adds space of 30px between dropdown rows */
+  }
+
+  .btn-add {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #008000;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  .discount-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 112px !important;
+    align-items: flex-start;
+  }
+
+  .discount-container .popular {
+    margin-bottom: 10px; /* Adjust the spacing as needed */
+  }
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+  }
+
+  .total-amount {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .shipping {
+    font-size: 14px;
+    color: #888;
+  }
+  .shipping-info{
+ color: #008000;
+ font-weight: bold;
+  }
